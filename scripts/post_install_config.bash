@@ -43,7 +43,7 @@ fi
 . $acctdir/eucarc
 
 if [ "$check_ubu_image" -eq "0" ] ; then
-    euca-install-image -n ui-ubuntu00 -b ubuntu00-ui -i $imagedir/precise-server-cloudimg-amd64-disk1.img -r x86_64 --virtualization-type hvm
+    euca-install-image -n ui-ubuntu00 -b ubuntu00-ui -i $imagedir/precise-server-cloudimg-amd64-disk1.img -r x86_64 --virtualization-type hvm --image-size 2G
 fi
 if [ "$check_win_image" -eq "0" ] ; then
     euca-install-image -n ui-winserv2003 -b winserv2003-ui --platform windows -i $imagedir/windowsserver2003r2_ent_x64.kvm.img -r x86_64 --virtualization-type hvm
