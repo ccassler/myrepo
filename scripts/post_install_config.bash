@@ -6,7 +6,7 @@ i=0
 acctname="ui-test-acct-00"
 acctdir="/root/$acctname"
 imagedir="/root/images"
-urls=( "http://images.walrus.cloud.qa1.eucalyptus-systems.com:8773/" "http://mirror.eucalyptus-systems.com/images/windows_images/windows_euca3.2/kvm/" )
+urls=( "http://images.walrus.cloud.qa1.eucalyptus-systems.com:8773" "http://mirror.eucalyptus-systems.com/images/windows_images/windows_euca3.2/kvm" )
 images=( "precise-server-cloudimg-amd64-disk1.img" "windowsserver2003r2_ent_x64.kvm.img" )
 
 check_ubu_image=$(euca-describe-images -a | grep ${images[0]} | wc -l)
