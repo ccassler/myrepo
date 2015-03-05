@@ -48,5 +48,3 @@ fi
 if [ "$check_win_image" -eq "0" ] ; then
     euca-install-image -n ui-winserv2003 -b winserv2003-ui --platform windows -i $imagedir/windowsserver2003r2_ent_x64.kvm.img -r x86_64 --virtualization-type hvm
 fi
-
-exit 0
